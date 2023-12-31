@@ -1,0 +1,10 @@
+git init
+git add <file Name>
+git status 
+git commit -m "Note"
+git log
+git checkout <id from log>
+git checkout <master>
+Press q / z / Ctl+z( To exit)
+git revert 
+git reset --hard <id> 
