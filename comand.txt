@@ -12,3 +12,4 @@ git reset --hard <id>
 git branch 
 git branch name (create branch)
 git branch -D name 
+git merge branch Name
