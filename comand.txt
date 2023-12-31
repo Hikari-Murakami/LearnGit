@@ -13,3 +13,6 @@ git branch
 git branch name (create branch)
 git branch -D name 
 git merge branch Name
+git remote add NameOF The RES
+git remote set-url  NameOF The RES
+git remote -v
