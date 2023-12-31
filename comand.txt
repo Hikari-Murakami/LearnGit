@@ -5,6 +5,10 @@ git commit -m "Note"
 git log
 git checkout <id from log>
 git checkout <master>
+git checkout -b name 
 Press q / z / Ctl+z( To exit)
 git revert 
 git reset --hard <id> 
+git branch 
+git branch name (create branch)
+git branch -D name 
