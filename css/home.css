@@ -1,0 +1,182 @@
+/* || CountDown  */
+#countdown_Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#countdown {
+  display: flex;
+  flex-wrap: wrap;
+
+  max-width: 98%;
+}
+#countdown > h1 {
+  width: 100%;
+  font-size: 2.63em;
+  margin-bottom: 0px;
+}
+#countdown > h5 {
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin: 5px 0px 20px 0px;
+}
+#countdown-Body {
+  flex-direction: row;
+  display: grid;
+  gap: 0 16px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 100vh;
+}
+
+#countdown-Body .countdown-Body__columns {
+  display: flex;
+  flex-direction: column;
+
+  flex-wrap: nowrap;
+}
+
+#countdown-Body .countdowns-Heading {
+  padding-left: 1rem;
+}
+#countdown-Body .anime-CountDowns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#countdown-Body .anime-CountDowns a {
+  max-height: 224px;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 0.5em;
+  cursor: default;
+  background-color: rgb(69 76 93);
+  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.75);
+}
+#countdown-Body .anime-CountDowns a:last-child {
+  display: inherit;
+  font: "open sans";
+  font-size: 20px;
+  font-weight: 700;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+#countdown-Body .anime-CountDowns a:last-child svg {
+  font-size: 24px;
+  fill: white;
+}
+
+/* ……………………………………………………………… ………………………………………………………………… ……………………………………………………………*/
+
+/* || CountDown Boxes  */
+#countdown-Body .countdownBox {
+  display: flex;
+  flex-direction: row;
+}
+
+#countdown-Body .countdown-Poster {
+  min-width: 123px;
+  z-index: 100;
+}
+#countdown-Body .countdown-Poster img {
+  width: 107px;
+  height: 160px;
+  border-radius: 0.5em;
+  border: 1px solid black;
+  cursor: pointer;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+}
+#countdown-Body .countdown-Poster img:hover {
+  transform: scale(2);
+}
+
+#countdown-Body .CD_Details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.CD_Details-Title,
+.CD_Details-Episode,
+.CD_Details-SubTitle {
+  margin: 0px;
+  /* display: flex; */
+}
+.CD_Details-Title {
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+.CD_Details-Episode,
+.CD_Details-SubTitle {
+  font-size: 1em;
+  font-weight: 400;
+  padding-top: 0.5em;
+  opacity: 0.8;
+}
+
+.CD_Details-Time {
+  display: flex;
+  align-items: flex-end;
+  min-height: 135px;
+}
+
+.CD_Time {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.CD_Time-Number {
+  font-size: 1.25em;
+  font-weight: 900;
+  padding: 0 16px;
+}
+.CD_Time-Text {
+  font-size: 0.65em;
+  font-weight: 300;
+  opacity: 0.8;
+  pad: 0 16px;
+}
+
+/* ……………………………………………………………… ………………………………………………………………… …………………………………………………………… */
+
+/* ……………………………………………………………… ………………………………………………………………… …………………………………………………………… */
+
+@media (max-width: 1200px) {
+  #countdown-Body {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 961px) {
+  #countdown-Body {
+    grid-template-columns: 1fr;
+  }
+
+  #countdown-Body .countdown-Body__columns {
+    width: 100%;
+  }
+  #countdown-Body .countdown-Poster {
+    min-width: 70px;
+  }
+  #countdown-Body .countdown-Poster img {
+    width: 54px;
+    height: 80px;
+  }
+  .CD_Details-Time {
+    min-height: 50px;
+  }
+}
