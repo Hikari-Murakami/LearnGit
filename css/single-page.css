@@ -1,0 +1,141 @@
+/* || General styles */
+
+/* || CountDown  */
+#countdown_Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#countdown {
+  display: flex;
+  flex-wrap: wrap;
+
+  max-width: 98%;
+}
+#countdown > h1 {
+  width: 100%;
+  font-size: 2.63em;
+  margin-bottom: 0px;
+}
+#countdown > h5 {
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin: 5px 0px 20px 0px;
+}
+
+#countdown-Body {
+  display: flex;
+  flex: 1;
+  /* background-color: #252a36; */
+}
+#countdown-Body .countdown-Body__columns {
+  flex: 1;
+  padding: 1em;
+}
+#countdown-Body .anime-CountDowns {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-gap: 1rem;
+}
+
+#countdown-Body .anime-CountDowns a {
+  display: flex;
+
+  aspect-ratio: 24/36;
+  /* border: 3px solid purple; */
+  border-radius: 1.2em;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  background-size: cover;
+  background-image: url("https://simkl.in/posters/72/7248108487b1ea37_m.webp");
+}
+
+/* ……………………………………………………………… ………………………………………………………………… ……………………………………………………………*/
+
+/* || CountDown Boxes  */
+#countdown-Body .countdownBox {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+#countdown-Body .CD_Details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+  background-color: #00000053;
+  border-radius: 1.2em;
+}
+
+.CD_Details-Title,
+.CD_Details-Episode,
+.CD_Details-SubTitle {
+  display: flex;
+  margin: 0px;
+  flex: 1;
+  align-items: center;
+}
+.CD_Details-Title {
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+.CD_Details-Episode,
+.CD_Details-SubTitle {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.CD_Details-Time {
+  display: flex;
+
+  flex: 1;
+  align-items: center;
+}
+
+.CD_Time {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.CD_Time-Number {
+  font-size: 2em;
+  font-weight: 900;
+  padding: 0 16px;
+}
+.CD_Time-Text {
+  font-size: 1em;
+  font-weight: 300;
+  opacity: 0.8;
+  pad: 0 16px;
+}
+
+/* ……………………………………………………………… ………………………………………………………………… …………………………………………………………… */
+
+/* @media (min-width: 1081px) {
+  #countdown-Body {
+  }
+} */
+
+@media (max-width: 961px) {
+  #countdown-Body .anime-CountDowns a {
+    max-height: 550px;
+  }
+  .CD_Details-Time {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    justify-content: center;
+  }
+}
