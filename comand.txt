@@ -7,7 +7,7 @@ git checkout <id from log>
 git checkout <master>
 git checkout -b name 
 Press q / z / Ctl+z( To exit)
-git revert 
+git revert   use very less 
 git reset --hard <id> 
 git branch 
 git branch name (create branch)
@@ -18,4 +18,35 @@ git remote set-url  NameOF The RES
 git remote -v
 git push
 git MD
+
+Corrent Setup 
+Creat SSH key 
+ ssh-keygen -t rsa -C "your-email-address" -f "github-username"
+ C:\Users\Light\.ssh
+Add Tow Ssh Key and Pub
+you need to start the SSH agent to add the keys
+
+add the ssh Keys to the Agent 
+ ssh-add ~/.ssh/ or use the full file path
+
+
+ add the content of .pub in github
+
+config The
+.ssh/config
+>>> Add this 
+ #WorkAcc
+ Host  github.com-Sus-D-Light
+ HostName github.com
+ User git
+ IdentityFile ~/.ssh/work_key
+
+ #PersonalACC
+ Host github.com-Hikari-Murakami
+ HostName github.com
+ User git
+ IdentityFile ~/.ssh/personal_key
+
+How i would Crate and Add to Git  with My corrent Setup
+
 
